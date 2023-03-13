@@ -25,6 +25,26 @@
     padding: 0px;
     }
 
+@media screen and (max-width: 1170px) {
+  /*MAX-WIDTH - TELAS MENORES QUE ALGUMA RESOLUÇÃO*/
+     body {
+      width: 1000px;
+     
+     } 
+
+}
+ @media screen and (max-width: 1138px) {
+      body {
+        width: 700px; 
+      }
+
+    
+ }
+ @media screen and (max-width: 1100px) {
+      body {
+          width: 400px; 
+      }
+}
 
 body {
   background-color: var(--cor6);
@@ -35,6 +55,7 @@ body {
   background-image: linear-gradient(var(--cor1), var(--cor3));
 }
 
+
 /*Especifico para tela*/
 
 /*480PX - 768PX = TABLET*/
@@ -44,22 +65,7 @@ body {
 
 /*Posso deixar sem: "screen and", que funciona para todos - print, speech e o proprio all*/
 
-@media screen and (max-width: 1170px) {
-  /*MAX-WIDTH - TELAS MENORES QUE ALGUMA RESOLUÇÃO*/
-     body {
-      width: 1000px;
-     } 
-}
- @media screen and (max-width: 1138px) {
-      body {
-        width: 700px; 
-      }
- }
- @media screen and (max-width: 1100px) {
-      body {
-          width: 400px; 
-      }
-}
+
 
 /*Cabeçalho*/
 header{
