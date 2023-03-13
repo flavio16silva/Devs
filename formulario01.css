@@ -35,17 +35,27 @@ body {
   background-image: linear-gradient(var(--cor1), var(--cor3));
 }
 
-@media(max-width: 1170px) {
+/*Especifico para tela*/
+
+/*480PX - 768PX = TABLET*/
+/*768PX - 1024PX = TELAS MENORES, LAPTOPS*/
+/*1024PX - 1200PX = DESKTOPS*/
+/*1200PX E + PX = TELAS MAIORES, TVS*/
+
+/*Posso deixar sem: "screen and", que funciona para todos - print, speech e o proprio all*/
+
+@media screen and (max-width: 1170px) {
+  /*MAX-WIDTH - TELAS MENORES QUE ALGUMA RESOLUÇÃO*/
      body {
       width: 1000px;
      } 
 }
- @media(max-width: 1138px) {
+ @media screen and (max-width: 1138px) {
       body {
         width: 700px; 
       }
  }
- @media(max-width: 1100px) {
+ @media screen and (max-width: 1100px) {
       body {
           width: 400px; 
       }
