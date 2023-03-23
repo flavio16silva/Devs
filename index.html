@@ -8,29 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="imagens/tag.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="formulario01.css" />
-    <title>Formulário Novo Dev</title>
+    <title>Formulário Dev</title>
   </head>
   <body>
     <header>
       <!--Imagem do site <img class="imagem" src="imagens/favicon.png" alt="tag programar" /> -->
-      <h1>Formulário para Cadastro de Devs </h1>
+      <h1>Formulário de Cadastro para Desenvolvedores</h1>
       <p>
         Esse formulário nos ajudará a identificar suas caracteristicas e
         aptidões como desenvolvedor, seu grau de conhecimento e a melhor forma
         para direcionar seus estudos. Aqui iremos lhe encaminhar para grupos com
         outros devs para lhe ajudar em seu crescimento e como você poderá ajudar
-        outros em suas carreiras.
+        outros em suas carreiras. A cada etapa de seu crescimento poderá apresentar projetos divididos em partes até forma um projeto maior para ser um portfólio.
+
+        Buscamos, pesquisamos e ensinamos cada parte de um projeto desde sua construção inicial, seus formatos, suas sintaxes, suas semânticas e como será demonstrado no ambiente Mobile e Web. Entenderá a relação entre as funções, propriedades e variáveis. Trabalharemos a concordância e relação de cada linha de código.  
       </p>
+
+  <!--Navbar dos menus-->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Etapas</a>
+    <a href="#">Turmas</a>
+    <a href="#">Material de Apoio</a>
+    <a href="#">Projetos Criados</a>
+    <a href="#">GIT</a>    
+  </nav>
+
     </header>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Cursos</a>
-      <a href="#">Turmas</a>
-      <a href="#">Material de Apoio</a>
-      <a href="#">GIT</a>
-    
-    </nav>
+  
 
     <main>
       <!--Inicio do Formulário-->
@@ -52,15 +58,15 @@
       <h3>Email:</h3>
       <textarea name="sobrenome" cols="90" rows="1" required></textarea>
 
-      <!--Campo do nascimento e CSS de classe "campo"-->
+      <!--Campo do nascimento-->
       <h3>Data de Nascimento:</h3>
       <input type="date" name="data" />
 
-      <!--Campo da idade e CSS de classe "campo"-->
+      <!--Campo da idade-->
       <h3>Idade:</h3>
       <input type="text" name="idade" />
 
-      <!--Campo para escolher o sexo (select option) e css de class "campo"-->
+      <!--Campo para escolher o sexo (select option) -->
       <h3>Sexo:</h3>
       <select class="select">
         <option value=""></option>
@@ -68,11 +74,11 @@
         <option value="Feminino">Feminino</option>
       </select>
 
-      <!--Campo da Cidade e CSS de classe "campo"-->
+      <!--Campo da Cidade-->
        <h3>Cidade:</h3>
        <input type="text" name="cidade" />
 
-      <!--Campo do Estado e CSS de classe "campo"-->
+      <!--Campo do Estado-->
       <h3>Estado:</h3>
       <input type="text" name="estado" />
 
