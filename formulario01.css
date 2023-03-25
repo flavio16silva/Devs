@@ -36,7 +36,6 @@ body {
  font-family: var(--font-texto-externo);
  margin:auto;
  background-color: var(--cor6);
-
  
 }
 
@@ -58,9 +57,9 @@ header > h1 {
   font-weight: bold;
   text-align: center;
   color: var(--cor6);
-  padding: 0px 0px 10px 0px;
+  padding-bottom: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.352);
-  margin-top: -14px;
+  
 }
 
 /*Paragrafo do Cabeçalho*/
@@ -108,18 +107,15 @@ nav > a:hover {
 /*Texto Central*/
 main {
    
-  min-width: 520px;
-  max-width: 1000px;
-
+  width: 60%;
+  
  /* min-width: 320px;
   max-width: 1130px; */
   
   font-family: var(--font-texto-externo);
-  /*background-color: var(--cor6);*/
- /* border-radius: 7px; */
   box-shadow: 5px 5px 10px; /* box com sombra ao redor do main*/
   padding: 1px 75px 30px 52px;
-  margin: auto;
+  margin-left: 15%;
   /*Retirar box-shadow, background-color*/
   /*Refazer as configurações do main*/
   
@@ -136,17 +132,17 @@ main > h1 {
 main > h3 {
   font-family: var(--font-texto-externo);
   font-size: 1em;
-  text-indent: 2px;
-  padding: 8px; 
+  padding-top: 7px; 
 
 }
 
 /*Input: Textarea: Nome, Sobrenome e Email, Jornada Dev*/
 main textarea {
-  border-radius: 7px;
-  resize: none;
-  padding: 6px;
-  max-width: 100%;
+  border-radius: 3px;
+  resize: none; /*não pode esticar o textarea*/
+  display: block;
+  padding: 1.5%;
+  width: 90%;
   margin-bottom: 5px;
   margin-top: 3px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.261);
@@ -165,13 +161,19 @@ main input[type=date] {
 
 }
 
+/*Input=Text: idade*/
+main input[type=number] {
+  width: 20%;
+  padding: 1.5%;
+}
+
 /*Input=Text: idade, estado e cidade*/
 main input[type=text] {
   font-family: var(--font-texto-externo);
   border-radius: 1px;
   padding: 7px;
   text-align: left;
-  margin: 4px 4px 5px 21px;
+  margin: 4px 4px 5px 21px; 
 
 } 
 
@@ -190,7 +192,7 @@ main select {
 
 /*Select: Sexo*/
 main select.select {
-  margin: 4px 4px 5px 21px;
+  margin: 4px 4px 5px 2px;
   
 }
 
@@ -365,11 +367,11 @@ main select.nivel {
 
 main label.nome {
   margin: 15px;
-  font-family: var(--font-padrão);
+  font-family: var(--font-texto-externo);
  
 }
 
-/*padding: 5px 15px;*/
+
 
 /*Imagem do site
 .image {
@@ -378,17 +380,14 @@ main label.nome {
 
 
 footer {
- /*background-color:var(--cor6);*/
-  min-width: 520px;
-  max-width: 1000px;  
-  font-family: var(--font-padrão);
+  width: 60%;
+  font-family: var(--font-texto-externo);
   text-align: center;
   border-radius: 7px;
-  box-shadow: 5px 5px 10px;
   margin: 15px 1px 10px 1px;
   box-shadow: 5px 5px 10px; /* box com sombra ao redor do main*/
   padding: 1px 75px 30px 52px;
-  margin: auto;
+  margin-left: 15%;
  
 }
 
