@@ -37,6 +37,7 @@ body {
  margin:auto;
  background-color: var(--cor6);
  
+ 
 }
 
 /*Cabeçalho*/
@@ -116,10 +117,9 @@ main {
   box-shadow: 5px 5px 10px; /* box com sombra ao redor do main*/
   padding: 1px 75px 30px 52px;
   margin-left: 15%;
-  /*Retirar box-shadow, background-color*/
-  /*Refazer as configurações do main*/
-  
+  display: inline-block;  
 }
+
 /* Dados Pessoais, Jornada Dev, Tecnologia */
 main > h1 {
   font-family: var(--font-texto-externo);
@@ -128,7 +128,7 @@ main > h1 {
   
 }
 
-/* Nome, Sobrenome,Email, Data... */
+/* Nome, Sobrenome, Email, Data... */
 main > h3 {
   font-family: var(--font-texto-externo);
   font-size: 1em;
@@ -153,41 +153,38 @@ main input[type=date] {
   font-family: var(--font-texto-externo);
   font-size: 17px;
   font-weight: bolder;
-  border-radius: 5px;
-  padding-left: 10px;
+  border-radius: 3px;
+  padding-left: 5px;
   height: 25px;
   text-indent: 2px;
-  margin: 4px 4px 5px 21px;
+  margin-bottom: 5px;
+  margin-top: 3px;
 
 }
 
-/*Input=Text: idade*/
+/*Input = number: idade*/
 main input[type=number] {
+  font-family: var(--font-texto-externo);
   width: 20%;
   padding: 1.5%;
-}
-
-/*Input=Text: idade, estado e cidade*/
-main input[type=text] {
-  font-family: var(--font-texto-externo);
   border-radius: 1px;
   padding: 7px;
-  text-align: left;
-  margin: 4px 4px 5px 21px; 
+  margin-bottom: 5px;
+  margin-top: 3px;   
 
 } 
 
 /*Select: Todos */
 main select {
-  appearance: none;
-  overflow: hidden;
+  appearance: none; /*seta de seleção*/
   font-family: var(--font-texto-externo);
-  text-align: center;
+  /*text-align: left;*/
   border-radius: 1px;
-  display: block;
-  text-align-last: center;
+  display: inline-block;
+  /*text-align-last: center;*/
   width: 150px;
   height: 25px;
+  padding-left:2%;
 }
 
 /*Select: Sexo*/
@@ -196,7 +193,30 @@ main select.select {
   
 }
 
-/*Select: Estudo - Campo de Estudar Sozinho com legenda*/
+/*Select: Estado e Cidade - na mesma linha */
+/*Select: Estado*/
+#est {
+  width: 42%;
+}
+
+/*h3 - Cidade*/
+.cidade {
+  width:100px;  
+  position: relative;
+  bottom: 65px;
+  margin-left: 45%;
+
+}
+/*Select: Cidade*/
+#cid {
+  position: relative;
+  width: 48%;
+  left: 150px;
+  bottom: 66px;
+  margin-left: 30%;
+}
+
+/*Select: Estudo - Momento de Estudos*/
 main select.estudo {
   margin: 4px;
   
