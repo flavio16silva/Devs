@@ -61,9 +61,9 @@
       <h3>Idade:</h3>
       <input type="number" name="idade" min="0" max="100" required />
 
-      <!--Campo para escolher o sexo (select option) -->
+      <!--Campo para escolher o sexo -->
       <h3>Sexo:</h3>
-      <select class="select">
+      <select class="sexo">
         <option value=""></option>
         <option value="Masculino">Masculino</option>
         <option value="Feminino">Feminino</option>
@@ -138,16 +138,11 @@
         <option value="TO">Palmas</option>
       </select>
 
-     
-    
-    
-
       <!--SUBTITULO: JORNADA DEV-->
-
       <h1>Jornada:</h1>
       <p>
-        Com o intuito de compreender sua jornada como Dev, quais caminhos para
-        estudar você tem utilizado?
+        Para compreender sua jornada como programador, quais caminhos para
+        estudar você utiliza?
       </p>
       <ol>
         <li>Sites de pesquisa (Cite 3 exemplos)</li>
@@ -218,9 +213,23 @@
         </article>
 
         <article class="grupo">
-          <input class="radio" type="radio" name="dev" value="QA" id="qa"/>
-         <label for="QA">           
-           <span>QA</span>
+          <input class="radio" type="radio" name="dev" value="Qualidade" id="qa"/>
+         <label for="QUALIDADE">           
+           <span>Qualidade</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Analise de Dados" id="dados"/>
+         <label for="DADOS">           
+           <span>Analise de Dados</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Learning" id="LEARNING"/>
+         <label for="LEARNING">           
+           <span>Learning</span>
          </label>
         </article>
       </section>
