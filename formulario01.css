@@ -132,16 +132,16 @@ main > h1 {
 main > h3 {
   font-family: var(--font-texto-externo);
   font-size: 1em;
-  padding-top: 7px; 
+  padding-top: 10px; 
 
 }
 
-/*Input: Textarea: Nome, Sobrenome e Email, Jornada Dev*/
+/*Input: Textarea: Nome, Sobrenome e Email, Jornada*/
 main textarea {
   border-radius: 3px;
   resize: none; /*não pode esticar o textarea*/
   display: block;
-  padding: 1.5%;
+  padding:3px;
   width: 90%;
   margin-bottom: 5px;
   margin-top: 3px;
@@ -166,9 +166,8 @@ main input[type=date] {
 main input[type=number] {
   font-family: var(--font-texto-externo);
   width: 20%;
-  padding: 1.5%;
   border-radius: 1px;
-  padding: 7px;
+  padding: 3px;
   margin-bottom: 5px;
   margin-top: 3px;   
 
@@ -188,22 +187,18 @@ main select {
 }
 
 /*Select: Sexo*/
-main select.select {
-  margin: 4px 4px 5px 2px;
-  
+.sexo {
+  color:red;
+  margin-top: 4px;  
+  margin-bottom: 4px;
 }
 
 /*Select: Estado e Cidade - na mesma linha */
-/*Select: Estado*/
-#est {
-  width: 42%;
-}
-
 /*h3 - Cidade*/
 .cidade {
   width:100px;  
   position: relative;
-  bottom: 65px;
+  bottom: 69px;
   margin-left: 45%;
 
 }
@@ -212,8 +207,13 @@ main select.select {
   position: relative;
   width: 48%;
   left: 150px;
-  bottom: 66px;
+  bottom: 69px;
   margin-left: 30%;
+}
+
+/*Select: Estado*/
+#est {
+  width: 43%;
 }
 
 /*Select: Estudo - Momento de Estudos*/
@@ -230,29 +230,30 @@ font-weight: bold;
 
 }
 
-/*Lista Jornada Dev...*/
+/*Lista Jornada*/
 main > ol {
   font-family: var(--font-texto-externo);
-  margin-left: 55px;
+  margin-left: 25px;
 }
 
 /*Quantos anos de carreira = select carreira*/
 main select.carreira {
-    margin: -20px 0px 10px 80px;  
+    margin-bottom: 5px;  
 }
 
 /*"Radio" - div de agrupamento do componente*/
 .wrapper {
   padding: 5px; 
+  
 }
 
 /*div geral - abaixo do wrapper - Area de atuação*/
 .grupo {
   
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
-  margin: 5px 0px 5px 15px;
+  margin-left: 15px;
+  justify-content: flex-start;
     
 }
 
