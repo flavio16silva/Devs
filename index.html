@@ -69,76 +69,83 @@
         <option value="Feminino">Feminino</option>
       </select>
 
-      <!--Campo da Estado-->
-    
-      <section class="linha">
-        <h3 class="estado">Estado:</h3>
-         <!--<input type="text" name="estado" />-->
-        <select id="est" class="select">
-          <option value=""></option>
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-        </select>
-        
-        <!--Campo do Cidade-->
-        <h3 class="cidade">Cidade:</h3>
-        <select id="cid" class="select">
-          <option value=""></option>
-          <option value="AC">Rio Branco</option>
-          <option value="AL">Maceió</option>
-          <option value="AP">Macapá</option>
-          <option value="AM">Manaus</option>
-          <option value="BA">Salvador</option>
-          <option value="CE">Fortaleza</option>
-          <option value="DF">Brasília</option>
-          <option value="ES">Vitória</option>
-          <option value="GO">Goiânia</option>
-          <option value="MA">São Luís</option>
-          <option value="MT">Cuiabá</option>
-          <option value="MS">Campo Grande</option>
-          <option value="MG">Belo Horizonte</option>
-          <option value="PA">Belém</option>
-          <option value="PB">João Pessoa</option>
-          <option value="PR">Curitiba</option>
-          <option value="PE">Recife</option>
-          <option value="PI">Teresina</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Natal</option>
-          <option value="RS">Porto Alegre</option>
-          <option value="RO">Porto Velho</option>
-          <option value="RR">Boa Vista</option>
-          <option value="SC">Florianópolis</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Aracaju</option>
-          <option value="TO">Palmas</option>
-        </select>
-      </section>
+      <!--Campo da Estado e Cidade (Flexbox)-->
+      <section class="container">
+          <section class="formulario">
+              <section class="input-group">
+                <article class="input-box">
+                    <h3 class="estado">Estado:</h3>
+                          <!--<input type="select" name="estado"/> -->
+                          <select id="est" class="select">
+                            <option value=""></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                          </select>
+                </article>
 
+                <article class="input-box">
+                  <!--Campo do Cidade-->
+                  <h3 class="cidade">Cidade:</h3>
+                  <select id="cid" class="select">
+                    <option value=""></option>
+                    <option value="AC">Rio Branco</option>
+                    <option value="AL">Maceió</option>
+                    <option value="AP">Macapá</option>
+                    <option value="AM">Manaus</option>
+                    <option value="BA">Salvador</option>
+                    <option value="CE">Fortaleza</option>
+                    <option value="DF">Brasília</option>
+                    <option value="ES">Vitória</option>
+                    <option value="GO">Goiânia</option>
+                    <option value="MA">São Luís</option>
+                    <option value="MT">Cuiabá</option>
+                    <option value="MS">Campo Grande</option>
+                    <option value="MG">Belo Horizonte</option>
+                    <option value="PA">Belém</option>
+                    <option value="PB">João Pessoa</option>
+                    <option value="PR">Curitiba</option>
+                    <option value="PE">Recife</option>
+                    <option value="PI">Teresina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Natal</option>
+                    <option value="RS">Porto Alegre</option>
+                    <option value="RO">Porto Velho</option>
+                    <option value="RR">Boa Vista</option>
+                    <option value="SC">Florianópolis</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Aracaju</option>
+                    <option value="TO">Palmas</option>
+                  </select>
+              </article>   
+              </section>
+                  
+          </section>
+      </section>
       <!--SUBTITULO: JORNADA DEV-->
       <h1>Jornada:</h1>
       <p>
