@@ -188,7 +188,6 @@ main select {
 
 /*Select: Sexo*/
 .sexo {
-  color:red;
   margin-top: 4px;  
   margin-bottom: 4px;
  
@@ -196,49 +195,91 @@ main select {
 
 /*Select: Estado e Cidade - na mesma linha */
 /*Section - linha*/
-.linha {
+.container {
+  width: 92%;
+  height: 10vh;
   display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 15px; 
-
+  /*background-color: rgba(0, 255, 255, 0.47);*/  
 }
 
-/*h3 - Estado*/
-.estado {
-  padding-top: 15px;
+.formulario {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  /*color: white;*/
+}
 
-  width:100px;   
-  margin-left:5px; 
-  position: relative;
-  bottom: 30px;  
+.input-group {
+  /*background-color: brown;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 124%;
+    
+}
+
+.input-box{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#est, #cid {
+  width:300px;
+  
+  }
+
+/*.linha {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 10px;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;  /*alinhamento vertical
+  height: 50px;
+  width: 54.5vw;
+
+}*/
+
+/*h3 - Estado
+.estado { 
+  height: 50px;
+  justify-content: left;  /*alinhamento horizontal
+  
   color:red; 
 
-}
+}*/
 
-/*h3 - Cidade*/
+/*h3 - Cidade 
 .cidade {
-  width:100px;   
-  margin-left:10px; 
-  position: relative;
-  bottom: 30px;  
-  left: 59px;
-  color: red;  
+  height: 50px;
+  justify-content: left;
+  margin-left:10px;  
   
-}
+  color:blue;  
+  
+}*/
 
-/*Select: Cidade*/
+/*Select: Cidade
 #cid { 
-  width: 48%;
-  left: 70px;
-  margin-right: 10px;
-}
+  padding:0;
+  margin: 0;
+  width: 600px; 
+  align-self: flex-end;
+  flex: 1 1 30%; 
+}*/
 
-/*Select: Estado*/
+/*Select: Estado
 #est {
-  width: 40%;
-  margin-left: 5px;
-}
+  padding:0;
+  width: 600px;
+  margin: 0;
+  align-self: flex-end;
+  flex: 1 1 30%;
+}*/
 
 /*Select: Estudo - Momento de Estudos*/
 main select.estudo {
