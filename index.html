@@ -53,6 +53,12 @@
       <h3>Email:</h3>
       <textarea name="sobrenome" cols="90" rows="1" required></textarea>
 
+      <!--Campo do email com legenda "email" e CSS de classe "campo"-->
+      <h3>Telefone:</h3>
+      <input id="number" type="tel" name="number" class="ls-mask-phone9_with_ddd" placeholder="(99)99999-9999" required>
+      
+
+
       <!--Campo do nascimento-->
       <h3>Data de Nascimento:</h3>
       <input type="date" name="data" />
@@ -70,11 +76,8 @@
       </select>
 
       <!--Campo da Estado e Cidade (Flexbox)-->
-      <section class="container">
-          <section class="formulario">
-              <section class="input-group">
-                <article class="input-box">
-                    <h3 class="estado">Estado:</h3>
+                <section class="container">
+                         <h3 class="estado">Estado:</h3>
                           <!--<input type="select" name="estado"/> -->
                           <select id="est" class="select">
                             <option value=""></option>
@@ -105,47 +108,42 @@
                             <option value="SP">São Paulo</option>
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
-                          </select>
-                </article>
+                          </select>   
 
-                <article class="input-box">
-                  <!--Campo do Cidade-->
-                  <h3 class="cidade">Cidade:</h3>
-                  <select id="cid" class="select">
-                    <option value=""></option>
-                    <option value="AC">Rio Branco</option>
-                    <option value="AL">Maceió</option>
-                    <option value="AP">Macapá</option>
-                    <option value="AM">Manaus</option>
-                    <option value="BA">Salvador</option>
-                    <option value="CE">Fortaleza</option>
-                    <option value="DF">Brasília</option>
-                    <option value="ES">Vitória</option>
-                    <option value="GO">Goiânia</option>
-                    <option value="MA">São Luís</option>
-                    <option value="MT">Cuiabá</option>
-                    <option value="MS">Campo Grande</option>
-                    <option value="MG">Belo Horizonte</option>
-                    <option value="PA">Belém</option>
-                    <option value="PB">João Pessoa</option>
-                    <option value="PR">Curitiba</option>
-                    <option value="PE">Recife</option>
-                    <option value="PI">Teresina</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Natal</option>
-                    <option value="RS">Porto Alegre</option>
-                    <option value="RO">Porto Velho</option>
-                    <option value="RR">Boa Vista</option>
-                    <option value="SC">Florianópolis</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Aracaju</option>
-                    <option value="TO">Palmas</option>
-                  </select>
-              </article>   
-              </section>
-                  
-          </section>
-      </section>
+               
+                        <!--Campo do Cidade-->
+                        <h3 class="cidade">Cidade:</h3>
+                        <select id="cid" class="select">
+                          <option value=""></option>
+                          <option value="AC">Rio Branco</option>
+                          <option value="AL">Maceió</option>
+                          <option value="AP">Macapá</option>
+                          <option value="AM">Manaus</option>
+                          <option value="BA">Salvador</option>
+                          <option value="CE">Fortaleza</option>
+                          <option value="DF">Brasília</option>
+                          <option value="ES">Vitória</option>
+                          <option value="GO">Goiânia</option>
+                          <option value="MA">São Luís</option>
+                          <option value="MT">Cuiabá</option>
+                          <option value="MS">Campo Grande</option>
+                          <option value="MG">Belo Horizonte</option>
+                          <option value="PA">Belém</option>
+                          <option value="PB">João Pessoa</option>
+                          <option value="PR">Curitiba</option>
+                          <option value="PE">Recife</option>
+                          <option value="PI">Teresina</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Natal</option>
+                          <option value="RS">Porto Alegre</option>
+                          <option value="RO">Porto Velho</option>
+                          <option value="RR">Boa Vista</option>
+                          <option value="SC">Florianópolis</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Aracaju</option>
+                          <option value="TO">Palmas</option>
+                        </select>
+                </section>
       <!--SUBTITULO: JORNADA DEV-->
       <h1>Jornada:</h1>
       <p>
@@ -179,7 +177,7 @@
       <h1>Tecnologia:</h1>
       
       <h3>Quantos anos de carreira na area?</h3>
-      <label class="nome" for="carreira">Carreira: </label>
+      
       <select class="carreira">
         <option value=""></option>
         <option value="5">Menos de 6 meses</option>
@@ -304,13 +302,13 @@
       <h3>
         <strong> Em que nível de desenvolvimento você se classifica? </strong>
       </h3>
-      <label class="nome" for="nivel">Nível: </label>
+     
       <select class="nivel" id="nivel" required>
         <option value=""></option>
-        <option value="Júnior">Júnior</option>
-        <option value="Pleno">Pleno</option>
-        <option value="Sênior">Sênior</option>
-        <option value="Master">Master</option>
+        <option value="Júnior">Júnior - Iniciante</option>
+        <option value="Pleno">Pleno - Intermediário</option>
+        <option value="Sênior">Sênior - Profissional</option>
+        <option value="Master">Master - Consultor</option>
       </select>
     </main>
 
