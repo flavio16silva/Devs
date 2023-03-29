@@ -32,7 +32,8 @@ body {
  max-width: 1130px;*/
  /*background-image: linear-gradient(var(--cor3), var(--cor5));*/
  /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));*/
-  
+
+
  font-family: var(--font-texto-externo);
  margin:auto;
  background-color: var(--cor6);
@@ -78,7 +79,7 @@ header > p {
 nav {
   max-width: 100%;
   padding: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   font-family: var(--font-texto-externo);
   text-align: center;
  
@@ -92,29 +93,23 @@ nav a {
   text-decoration: none;
   font-weight: lighter;
   transition-duration: .5s;
-  display: inline-block;
-  
- 
+  display: inline-block; 
 }
 
 nav > a:hover {
   color: white;
-  background-color: var(--cor2);
+  border-bottom: 3px solid var(--cor2);
+  /*background-color: var(--cor2);
   box-shadow: 0px 7px 4px 4px rgba(0, 0, 0, 0.13);
-  border-radius: 7px;
-  
+  border-radius: 7px;  */
 }
 
 /*Texto Central*/
 main {
    
   width: 60%;
-  
- /* min-width: 320px;
-  max-width: 1130px; */
-  
   font-family: var(--font-texto-externo);
-  box-shadow: 5px 5px 10px; /* box com sombra ao redor do main*/
+  box-shadow: 5px 5px 10px; 
   padding: 1px 75px 30px 52px;
   margin-left: 15%;
   display: inline-block;  
@@ -123,8 +118,9 @@ main {
 /* Dados Pessoais, Jornada Dev, Tecnologia */
 main > h1 {
   font-family: var(--font-texto-externo);
-  font-size: 27px;
-  margin: 10px 0px 0px 0px;
+  font-size: 25px;
+  height: 30px;
+  margin-top: 10px;
   
 }
 
@@ -148,11 +144,19 @@ main textarea {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.261);
 }
 
+main [type=tel]{
+  font-family: var(--font-texto-externo);
+  width: 20%;
+  border-radius: 1px;
+  padding: 2px;
+
+}
+
 /*Data de Nascimento*/
 main input[type=date] {
   font-family: var(--font-texto-externo);
   font-size: 17px;
-  font-weight: bolder;
+  font-weight: bold;
   border-radius: 3px;
   padding-left: 5px;
   height: 25px;
@@ -162,12 +166,12 @@ main input[type=date] {
 
 }
 
-/*Input = number: idade*/
+/*Input = number: Idade*/
 main input[type=number] {
   font-family: var(--font-texto-externo);
   width: 20%;
   border-radius: 1px;
-  padding: 3px;
+  padding: 2px;
   margin-bottom: 5px;
   margin-top: 3px;   
 
@@ -189,97 +193,40 @@ main select {
 /*Select: Sexo*/
 .sexo {
   margin-top: 4px;  
-  margin-bottom: 4px;
- 
+  margin-bottom: 4px; 
 }
 
 /*Select: Estado e Cidade - na mesma linha */
-/*Section - linha*/
+/*container da section maior
 .container {
   width: 92%;
   height: 10vh;
   display: flex;
-  /*background-color: rgba(0, 255, 255, 0.47);*/  
+  background-color: rgba(0, 255, 255, 0.47); 
+}*/
+
+.container {
+  width: 92px;
+  margin-top:8px;
+  margin-bottom:15px;
 }
 
-.formulario {
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  /*color: white;*/
-}
-
-.input-group {
-  /*background-color: brown;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 124%;
-    
-}
-
-.input-box{
-  display:flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-#est, #cid {
-  width:300px;
-  
-  }
-
-/*.linha {
-  margin-left: 2px;
-  margin-right: 2px;
+/*h3 - estado*/
+.estado {
   padding-top: 10px;
-  display: flex;  
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;  /*alinhamento vertical
-  height: 50px;
-  width: 54.5vw;
+  padding-bottom:5px;
+}
 
-}*/
-
-/*h3 - Estado
-.estado { 
-  height: 50px;
-  justify-content: left;  /*alinhamento horizontal
-  
-  color:red; 
-
-}*/
-
-/*h3 - Cidade 
+/*h3 -cidade*/
 .cidade {
-  height: 50px;
-  justify-content: left;
-  margin-left:10px;  
-  
-  color:blue;  
-  
-}*/
+  padding-top: 7px;
+  padding-bottom:5px;
+}
 
-/*Select: Cidade
-#cid { 
-  padding:0;
-  margin: 0;
-  width: 600px; 
-  align-self: flex-end;
-  flex: 1 1 30%; 
-}*/
-
-/*Select: Estado
-#est {
-  padding:0;
-  width: 600px;
-  margin: 0;
-  align-self: flex-end;
-  flex: 1 1 30%;
-}*/
+/*Select estado e cidade*/
+#est, #cid {
+  width: 300px;  
+}
 
 /*Select: Estudo - Momento de Estudos*/
 main select.estudo {
@@ -299,11 +246,13 @@ font-weight: bold;
 main > ol {
   font-family: var(--font-texto-externo);
   margin-left: 25px;
+  margin-bottom: 20px;
 }
 
 /*Quantos anos de carreira = select carreira*/
 main select.carreira {
-    margin-bottom: 5px;  
+    margin-bottom: 5px; 
+    width:20%; 
 }
 
 /*"Radio" - div de agrupamento do componente*/
@@ -372,8 +321,6 @@ main select.carreira {
   margin: 4px;
 }
 
-
-
 /*"Checkbox" - Tecnologia - Linguagens*/
 /*div de agrupamento do componente*/
 .form {
@@ -386,8 +333,7 @@ main select.carreira {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  margin: 5px 0px 5px 15px;
-    
+  margin: 5px 0px 5px 15px;    
 }
 
 .check label {
@@ -412,13 +358,10 @@ main select.carreira {
   padding: 10px;
   margin: 5px;
   border-radius: 0;
-
-
 }
 
 /*Antes do checkbox*/
 .checkbox:before {
-
   opacity: 0;
   content: '';
   border-radius: 0;
@@ -447,8 +390,8 @@ main select.carreira {
 
 /*Select: nivel*/
 main select.nivel {
-  margin: -20px 0px 10px 61px;
-  
+  width:20%;  
+  text-align: left; 
 }
 
 main label.nome {
