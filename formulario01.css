@@ -81,6 +81,7 @@ nav {
   padding: 15px;
   padding-bottom: 5px;
   font-family: var(--font-texto-externo);
+  font-weight: bold;
   text-align: center;
  
 }
@@ -98,7 +99,8 @@ nav a {
 
 nav > a:hover {
   color: white;
-  border-bottom: 3px solid var(--cor2);
+  border-bottom: 4px solid var(--cor6);
+  padding: 0.3em;
   /*background-color: var(--cor2);
   box-shadow: 0px 7px 4px 4px rgba(0, 0, 0, 0.13);
   border-radius: 7px;  */
@@ -469,9 +471,10 @@ footer textarea {
 
 /*Ao passar do mouse*/
 .botao:hover{
-  background-color: var(--cor2);
+  background-color: var(--cor4);
   color:white;
   transform: scale(1.1);
+  border: 2px solid var(--cor5);
 }
 
 
