@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--Linguagem do site-->
+<html lang="pt-br">
+  <head>
+    <!--Conjunto de Caracteres-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagens/tag.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Formulário Dev</title>
+  </head>
+  <body>
+    <header>
+      <!--Imagem do site <img class="imagem" src="imagens/favicon.png" alt="tag programar" /> -->
+      <h1>Formulário de Cadastro</h1>
+      <p>
+        Esse formulário nos ajudará a identificar suas aptidões como desenvolvedor, seu grau de conhecimento e a melhor forma
+        para direcionar seus estudose sua carreira.      
+      </p>
+
+  <!--Navbar dos menus-->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#Etapas">Etapas</a>
+    <a href="#Turmas">Turmas</a>
+    <a href="#Material de Apoio">Material de Apoio</a>
+    <a href="#Projetos Criados">Projetos Criados</a>
+    <a href="#GIT">GIT</a>    
+  </nav>
+
+    </header>
+
+  
+
+    <main>
+      <!--Inicio do Formulário-->
+
+      <!--SUBTITULO: DADOS PESSOAIS-->
+
+      <h1>Dados Pessoais</h1>
+     
+      <!--Campo do nome com legenda "nome"-->
+      <h3>Nome:</h3>
+      <!-- Criação da lacuna para escrever o nome-->
+      <textarea name="name" cols="90" rows="1" required></textarea>
+
+      <!--Campo do sobrenome com legenda "sobrenome" e CSS de classe "campo"-->
+      <h3>Sobrenome:</h3>
+      <textarea name="sobrenome" cols="90" rows="1" required></textarea>
+
+      <!--Campo do email com legenda "email" e CSS de classe "campo"-->
+      <h3>Email:</h3>
+      <textarea name="sobrenome" cols="90" rows="1" required></textarea>
+
+      <!--Campo do email com legenda "email" e CSS de classe "campo"-->
+      <h3>Telefone:</h3>
+      <input id="number" type="tel" name="number" class="ls-mask-phone9_with_ddd" placeholder="(99)99999-9999" required>
+      
+
+
+      <!--Campo do nascimento-->
+      <h3>Data de Nascimento:</h3>
+      <input type="date" name="data" />
+
+      <!--Campo da idade-->
+      <h3>Idade:</h3>
+      <input type="number" name="idade" min="0" max="100" required />
+
+      <!--Campo para escolher o sexo -->
+      <h3>Sexo:</h3>
+      <select class="sexo">
+        <option value=""></option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+
+      <!--Campo da Estado e Cidade (Flexbox)-->
+                <section class="container">
+                         <h3 class="estado">Estado:</h3>
+                          <!--<input type="select" name="estado"/> -->
+                          <select id="est" class="select">
+                            <option value=""></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                          </select>   
+
+               
+                        <!--Campo do Cidade-->
+                        <h3 class="cidade">Cidade:</h3>
+                        <select id="cid" class="select">
+                          <option value=""></option>
+                          <option value="AC">Rio Branco</option>
+                          <option value="AL">Maceió</option>
+                          <option value="AP">Macapá</option>
+                          <option value="AM">Manaus</option>
+                          <option value="BA">Salvador</option>
+                          <option value="CE">Fortaleza</option>
+                          <option value="DF">Brasília</option>
+                          <option value="ES">Vitória</option>
+                          <option value="GO">Goiânia</option>
+                          <option value="MA">São Luís</option>
+                          <option value="MT">Cuiabá</option>
+                          <option value="MS">Campo Grande</option>
+                          <option value="MG">Belo Horizonte</option>
+                          <option value="PA">Belém</option>
+                          <option value="PB">João Pessoa</option>
+                          <option value="PR">Curitiba</option>
+                          <option value="PE">Recife</option>
+                          <option value="PI">Teresina</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Natal</option>
+                          <option value="RS">Porto Alegre</option>
+                          <option value="RO">Porto Velho</option>
+                          <option value="RR">Boa Vista</option>
+                          <option value="SC">Florianópolis</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Aracaju</option>
+                          <option value="TO">Palmas</option>
+                        </select>
+                </section>
+      <!--SUBTITULO: JORNADA DEV-->
+      <h1>Jornada:</h1>
+      <p>
+        Para compreender sua jornada como programador, quais caminhos para
+        estudar você utiliza?
+      </p>
+      <ol>
+        <li>Sites de pesquisa (Cite 3 exemplos)</li>
+        <textarea name="site" cols="80" rows="1"></textarea>
+        <li>Vídeos no Youtube (Cite 3 canais)</li>
+        <textarea name="video" cols="80" rows="1"></textarea>
+        <li>Faculdade(s) (Cite 3 nomes se for necessário)</li>
+        <textarea name="faculdade" cols="80" rows="1"></textarea>
+        <li>Cursos técnicos (Cite até 3 cursos)</li>
+        <textarea name="curso" cols="80" rows="1"></textarea>
+
+        <!--Campo de Estudar Sozinho com legenda -->
+        <li>Momento de Estudos: (Quais seus horários de estudo?)</li>
+        <select class="estudo">
+          <option value=""></option>
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option>
+          <option value="madrugada">Madrugada</option>
+        </select>
+        <li>Descreva em poucas palavras, a metodologia de estudo utilizada.</li>
+        <textarea name="estudo" cols="80" rows="1"></textarea>
+      </ol>
+
+      <!--Campo para falar o tempo de carreira (select option) e css de class "campo"-->
+      <h1>Tecnologia:</h1>
+      
+      <h3>Quantos anos de carreira na area?</h3>
+      
+      <select class="carreira">
+        <option value=""></option>
+        <option value="5">Menos de 6 meses</option>
+        <option value="4">Mais de 1 ano</option>
+        <option value="3">Entre 2 e 4 anos</option>
+        <option value="2">Entre 4 e 6 anos</option>
+        <option value="1">Acima de 6 anos</option>
+      </select>
+
+      <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+      <h3>Qual a sua area de Atuação?</h3>
+      <section class="wrapper">
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Front-end" id="front" checked/>
+         <label for="front">           
+           <span>Front-end</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+            <input class="radio" type="radio" name="dev" value="Back-end" id="Back"/>
+           <label for="Back">           
+             <span>Back-end</span>
+           </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Fullstack" id="Full"/>
+         <label for="Full">           
+           <span>Fullstack</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Suporte" id="sup"/>
+         <label for="Suporte">           
+           <span>Suporte</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Qualidade" id="qa"/>
+         <label for="QUALIDADE">           
+           <span>Qualidade</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Analise de Dados" id="dados"/>
+         <label for="DADOS">           
+           <span>Analise de Dados</span>
+         </label>
+        </article>
+
+        <article class="grupo">
+          <input class="radio" type="radio" name="dev" value="Learning" id="LEARNING"/>
+         <label for="LEARNING">           
+           <span>Learning</span>
+         </label>
+        </article>
+      </section>
+ 
+
+      <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+
+      <h3>Quais as linguagens e/ou tecnologias que você conhece?</h3>
+
+    <section class="form">
+      <article class="check">
+        <input class="checkbox"  type="checkbox" name="tec1" id="tec1" value="java" checked/>
+        <label for="tec1">JAVA</label>
+      </article>
+
+      <article class="check">
+       <input class="checkbox" type="checkbox" name="tec2" id="tec2" value="php" />
+       <label for="tec2">PHP</label>
+      </article>
+       
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec3" id="tec3" value="HTML" />
+        <label for="tec3">HTML</label>
+      </article>
+
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec4" id="tec4" value="CSS" />
+        <label for="tec4">CSS</label>
+      </article>
+
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec5" id="tec5" value="JAVASCRIPT" />
+        <label for="tec5">JAVASCRIPT</label>
+      </article>
+
+      <article class="check">
+       <input class="checkbox" type="checkbox" name="tec6" id="tec6" value="PYTHON" />
+       <label for="tec6">PYTHON</label>
+      </article> 
+
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec7" id="tec7" value="C#" />
+        <label for="tec7">C#</label>
+      </article>
+      
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec8" id="tec8" value="C++" />
+        <label for="tec8">C++</label>
+      </article>
+
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec9" id="tec9" value="C" />
+        <label for="tec9">C</label>
+      </article>
+
+      <article class="check">
+        <input class="checkbox" type="checkbox" name="tec10" id="tec10" value="NODE.JS" />
+        <label for="tec10">NODE.JS</label>
+      </article>
+    </section>
+
+      <!--Campo para desenvolvimento (select option) -->
+
+      <h3>
+        <strong> Em que nível de desenvolvimento você se classifica? </strong>
+      </h3>
+     
+      <select class="nivel" id="nivel" required>
+        <option value=""></option>
+        <option value="Júnior">Júnior - Iniciante</option>
+        <option value="Pleno">Pleno - Intermediário</option>
+        <option value="Sênior">Sênior - Profissional</option>
+        <option value="Master">Master - Consultor</option>
+      </select>
+    </main>
+
+    <!--Caixa de Texto: FALE SOBRE VOCÊ-->
+    <footer>
+      <h1>Fale sobre você</h1>
+      <p>
+        Conte-nos sobre suas experiências e expectativas para o mercado de
+        trabalho (máx. 100 caracteres).
+      </p>
+
+      <textarea
+        placeholder="Digite sobre sua jornada"
+        minlength="20"
+        maxlength="100"
+        cols="60"
+        rows="5"
+      ></textarea>
+
+      <section class="social-media">
+        
+
+      </section>
+      
+      <!--Botão para envio do formulário-->
+      <button class="botao" type="submit" onsubmit="">
+        Clique para enviar
+      </button>
+
+
+    </footer>
+  </body>
+</html>
